@@ -16,7 +16,7 @@ contour_label_color = "#ffffff"
 # Turn radius formula
 def turn_radius_nm(V, phi_deg):
     phi = np.radians(phi_deg)
-    return (1.457e-5 * (V**2) * 2) / np.tan(phi)
+    return (1.457e-5 * V**2) / np.tan(phi)
 
 # Range scaling
 TAS = np.linspace(25, 450, 200)
